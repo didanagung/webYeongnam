@@ -1,22 +1,20 @@
-import Head from 'next/head';
-import Navbar from './components/navbar';
-import Hero from './components/hero';
+import Head from "next/head";
+import Layout from "./components/layout";
+import Main from "./components/main";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>YEONGNAM</title>
+        <title>Home &mdash; YEONGNAM</title>
         <meta name="description" content="PT YEONGNAM SMD INDUSTRY" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/LOGO.png" />
       </Head>
 
       <main>
-        <Hero/>
-        <div className='h-screen'></div>
-        <div className='h-screen'></div>
-        <Navbar/>
+        <Main />
+        <Layout />
       </main>
     </>
-  )
+  );
 }
