@@ -1,5 +1,4 @@
 import Hero from "./hero";
-import Kontak from "./kontak";
 
 const Main = () => {
   return (
@@ -9,7 +8,6 @@ const Main = () => {
       <div className="h-screen"></div>
       <div className="h-screen"></div>
       <div className="h-screen"></div>
-      <Kontak />
     </>
   );
 };

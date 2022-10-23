@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/future/image";
 import { useRouter } from "next/router";
-import LogoAtr from "../../../public/ataraLogo.png";
+import LogoAtr from "../../public/ataraLogo.png";
 
 const Navbar = () => {
   const router = useRouter();
@@ -21,33 +21,55 @@ const Navbar = () => {
           <ul className="menu menu-horizontal p-0">
             <li>
               <Link href="/">
-                <a>Home</a>
+                <a className={router.asPath == "/" ? "active" : ""}>Home</a>
               </Link>
             </li>
             <li tabIndex={0}>
-              <a>
-                Produk
-                <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                </svg>
-              </a>
+              <Link href="/produk">
+                <a>
+                  Produk
+                  <svg
+                    className="fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                  </svg>
+                </a>
+              </Link>
               <ul className="p-2 bg-base-100">
                 <li>
-                  <a>Coverall</a>
+                  <Link href="/produk/coverall">
+                    <a
+                      className={
+                        router.asPath == "/produk/coverall" ? "active" : ""
+                      }
+                    >
+                      Coverall
+                    </a>
+                  </Link>
                 </li>
                 <li>
-                  <a>Gown</a>
+                  <Link href="/produk/gown">
+                    <a
+                      className={
+                        router.asPath == "/produk/gown" ? "active" : ""
+                      }
+                    >
+                      Gown
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Tentang Kami</a>
+              <Link href="/kontak">
+                <a className={router.asPath == "/kontak" ? "active" : ""}>
+                  Kontak
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -73,8 +95,8 @@ const Navbar = () => {
             <span className="btm-nav-label">Home</span>
           </button>
         </Link>
-        <Link href="/#kontak" scroll={false}>
-          <button className={router.asPath == "/#kontak" ? "active" : ""}>
+        <Link href="/produk" scroll={false}>
+          <button className={router.asPath == "/produk" ? "active" : ""}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -92,8 +114,8 @@ const Navbar = () => {
             <span className="btm-nav-label">Produk</span>
           </button>
         </Link>
-        <Link href="#footer">
-          <button>
+        <Link href="/kontak">
+          <button className={router.asPath == "/kontak" ? "active" : ""}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -108,7 +130,7 @@ const Navbar = () => {
                 d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
               />
             </svg>
-            <span className="btm-nav-label">Tentang Kami</span>
+            <span className="btm-nav-label">Kontak</span>
           </button>
         </Link>
       </div>

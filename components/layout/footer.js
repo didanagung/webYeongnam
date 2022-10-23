@@ -1,6 +1,6 @@
 import Image from "next/future/image";
-import Link from "next/link";
-import LogoAtr from "../../../public/ataraLogo.png";
+// import Link from "next/link";
+import LogoAtr from "../../public/ataraLogo.png";
 const Footer = () => {
   return (
     <>

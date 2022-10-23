@@ -1,5 +1,5 @@
 import Image from "next/future/image";
-import Gown from "../../../public/gown.jpeg";
+import Gown from "../../public/gown.jpeg";
 const Hero = () => {
   return (
     <div>
@@ -18,7 +18,7 @@ const Hero = () => {
               adipisci? Suscipit adipisci aperiam in consequuntur dolor unde
               reprehenderit iste magnam?......
             </p>
-            <button className="btn btn-primary rounded-xl shadow-lg">
+            <button className="btn btn-primary rounded-xl shadow-lg w-full lg:w-auto">
               Lebih Banyak
             </button>
           </div>
