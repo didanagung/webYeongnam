@@ -17,13 +17,12 @@ const Produk = () => {
       <div className="text-center mb-12 p-5 md:p-10 md:mt-12">
         <h1 className="text-5xl font-semibold my-2">Produk</h1>
         <p className="font-extralight mb-10">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
-          excepturi!
+          List Produk yang telah kami buat.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           <div className="flex rounded-xl p-2 shadow-lg">
             <div className="w-1/2 m-auto">
-              <Image src={ImageCard} />
+              <Image src={ImageCard} alt="gown" />
             </div>
             <div className="w-1/2 flex">
               <div className="m-auto p-1">
@@ -41,12 +40,30 @@ const Produk = () => {
           </div>
           <div className="flex rounded-xl p-2 shadow-lg">
             <div className="w-1/2 m-auto">
+              <Image src={ImageCard} alt="coverall" />
+            </div>
+            <div className="w-1/2 flex">
+              <div className="m-auto p-1">
+                <h3 className="text-center text-2xl font-semibold my-2">
+                  Coverall
+                </h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <Link href="/produk/coverall">
+                  <a className="btn btn-accent btn-sm rounded-lg my-2">
+                    Detail
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="flex rounded-xl p-2 shadow-lg">
+            <div className="w-1/2 m-auto">
               <Image src={ImageCard} />
             </div>
             <div className="w-1/2 flex">
               <div className="m-auto p-1">
                 <h3 className="text-center text-2xl font-semibold my-2">
-                  Gown
+                  Opthalmic Drape
                 </h3>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <Link href="/produk/gown">
@@ -64,25 +81,7 @@ const Produk = () => {
             <div className="w-1/2 flex">
               <div className="m-auto p-1">
                 <h3 className="text-center text-2xl font-semibold my-2">
-                  Gown
-                </h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <Link href="/produk/gown">
-                  <a className="btn btn-accent btn-sm rounded-lg my-2">
-                    Detail
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="flex rounded-xl p-2 shadow-lg">
-            <div className="w-1/2 m-auto">
-              <Image src={ImageCard} />
-            </div>
-            <div className="w-1/2 flex">
-              <div className="m-auto p-1">
-                <h3 className="text-center text-2xl font-semibold my-2">
-                  Gown
+                  Universal Sets
                 </h3>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <Link href="/produk/gown">

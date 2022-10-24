@@ -1,10 +1,12 @@
 import Hero from "./hero";
+import Tentang from "./tentang";
 
 const Main = () => {
   return (
     <>
       <Hero />
-      <div className="h-screen"></div>
+      <Tentang />
+      <div className="h-screen bg-green-500"></div>
       <div className="h-screen"></div>
       <div className="h-screen"></div>
       <div className="h-screen"></div>

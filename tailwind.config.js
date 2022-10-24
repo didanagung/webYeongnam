@@ -9,7 +9,14 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["corporate"],
+    themes: [
+      {
+        corporate: {
+          ...require("daisyui/src/colors/themes")["[data-theme=corporate]"],
+          primary: "#005A87",
+        },
+      },
+    ],
     darkTheme: "corporate",
   },
-}
+};

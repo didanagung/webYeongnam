@@ -1,13 +1,17 @@
-// import { HiLocationMarker } from "react-icons/hi";
-// import { IoMailOutline } from "react-icons/io";
-// import { BiPhoneCall } from "react-icons/bi";
-// import { HiLocationMarker, IoMailOutline, BiPhoneCall } from "react-icons/all";
-// import { HomeIcon } from "@heroicons/react/outline";
+import Head from "next/head";
+
+import { ImEnvelop, ImLocation2, ImPhone } from "react-icons/im";
+
 import Layout from "../components/layout";
 
 const Kontak = () => {
   return (
     <>
+      <Head>
+        <title>Kontak &mdash; ATARA</title>
+        <meta name="description" content="Kontak alat kesehatan bandung" />
+        <link rel="icon" href="/LOGO.png" />
+      </Head>
       <div className="p-7 text-center md:mt-16">
         <h1 className="text-5xl font-semibold my-2">Kontak Kami</h1>
         <p className="font-extralight mb-10">
@@ -24,20 +28,19 @@ const Kontak = () => {
           ></iframe>
         </section>
         <section>
-          <ul className="grid grid-cols-1 gap-2 md:grid-cols-3 w-10/12 m-auto my-7">
-            <li className="w-full bg-white rounded-xl shadow-xl p-4 group hover:cursor-pointer hover:bg-teal-800 flex">
+          <ul className="grid grid-cols-1 gap-6 md:gap-3 md:grid-cols-3 w-10/12 m-auto my-7">
+            <li className="w-full bg-white rounded-xl shadow-xl p-4 group hover:cursor-pointer hover:bg-primary flex">
               <div className="m-auto">
-                {/* <HiLocationMarker className="w-12 h-12 md:w-20 md:h-20 m-auto my-2 group-hover:text-white" /> */}
-                {/* <HomeIcon className="w-14 h-14 md:w-20 md:h-20 m-auto my-2 group-hover:text-white" /> */}
+                <ImLocation2 className="mx-auto w-10 h-10 mb-1 group-hover:text-white" />
                 <p className="font-semibold group-hover:text-white">
                   Jalan AMD Dusun Tarikolot Kecamatan Pamulihan Kabupaten
                   Sumedang Provinsi Jawa Barat
                 </p>
               </div>
             </li>
-            <li className="w-full bg-white rounded-xl shadow-xl p-4 group hover:cursor-pointer hover:bg-teal-800 flex">
+            <li className="w-full bg-white rounded-xl shadow-xl p-4 group hover:cursor-pointer hover:bg-primary flex">
               <div className="m-auto">
-                {/* <BiPhoneCall className="w-14 h-14 m-auto my-2 group-hover:text-white" /> */}
+                <ImPhone className="mx-auto w-10 h-10 mb-1 group-hover:text-white" />
                 <a
                   href="tel:02287914545"
                   className="font-semibold group-hover:text-white"
@@ -46,9 +49,9 @@ const Kontak = () => {
                 </a>
               </div>
             </li>
-            <li className="w-full bg-white rounded-xl shadow-xl p-4 group hover:cursor-pointer hover:bg-teal-800 flex">
+            <li className="w-full bg-white rounded-xl shadow-xl p-4 group hover:cursor-pointer hover:bg-primary flex">
               <div className="m-auto">
-                {/* <IoMailOutline className="w-14 h-14 m-auto my-2 group-hover:text-white" /> */}
+                <ImEnvelop className="mx-auto w-10 h-10 mb-1 group-hover:text-white" />
                 <a
                   href="mailto:acimedika@gmail.com"
                   className="font-semibold group-hover:text-white"
