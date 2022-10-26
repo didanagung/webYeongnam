@@ -13,15 +13,11 @@ const Kontak = () => {
         <link rel="icon" href="/LOGO.png" />
       </Head>
       <div className="p-7 text-center md:mt-16">
-        <h1 className="text-5xl font-semibold my-2">Kontak Kami</h1>
-        <p className="font-extralight mb-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-          blanditiis.
-        </p>
+        <h1 className="text-5xl font-semibold my-6">Kontak Kami</h1>
         <section className="flex w-full">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.977655838078!2d107.8159664143169!3d-6.893275869370351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68db8c00094157%3A0xc2ad6aedbfff3442!2sPT.%20YEONGNAM%20SMD%20INDUSTRY!5e0!3m2!1sen!2sid!4v1665469561634!5m2!1sen!2sid"
-            className="border-0 w-10/12 h-96 m-auto shadow-2xl rounded-xl"
+            className="border-0 md:w-10/12 h-96 m-auto shadow-2xl rounded-xl"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
