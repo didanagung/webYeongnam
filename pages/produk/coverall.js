@@ -15,7 +15,11 @@ const Gown = () => {
 
       <div className="w-10/12 m-auto md:p-10 md:mt-12 md:flex">
         <div className="md:w-6/12 p-5">
-          <Image src={FotoGown} className="w-10/12 m-auto rounded-xl" />
+          <Image
+            src={FotoGown}
+            alt="Foto Coverall"
+            className="w-10/12 m-auto rounded-xl"
+          />
         </div>
         <div className="md:w-6/12 p-7">
           <h1 className="text-5xl font-semibold my-2 text-center">Coverall</h1>

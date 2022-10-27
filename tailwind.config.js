@@ -5,6 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      squarePeg: ["Square Peg", "cursive"],
+      tapestry: ["Tapestry", "cursive"],
+      waterBrush: ["Water Brush", "cursive"],
+      raleway: ["Raleway", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [require("daisyui")],

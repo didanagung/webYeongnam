@@ -27,6 +27,13 @@ const Navbar = () => {
                 <a className={router.asPath == "/" ? "active" : ""}>Home</a>
               </Link>
             </li>
+            <li>
+              <Link href="/#galeri" scroll={false}>
+                <a className={router.asPath == "/#galeri" ? "active" : ""}>
+                  Galeri
+                </a>
+              </Link>
+            </li>
             <li tabIndex={0}>
               <Link href="/produk">
                 <a>
@@ -80,7 +87,13 @@ const Navbar = () => {
 
       <div className="btm-nav md:invisible">
         <Link href="/">
-          <button className={router.asPath == "/" ? "active" : ""}>
+          <button
+            className={
+              router.asPath == "/" || router.asPath == "/#tentang"
+                ? "active"
+                : ""
+            }
+          >
             <ImHome3 className="w-5 h-5" />
             <span className="btm-nav-label">Home</span>
           </button>

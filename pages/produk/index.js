@@ -15,7 +15,7 @@ const Produk = () => {
       </Head>
 
       <div className="text-center mb-12 p-5 md:p-10 md:mt-12">
-        <h1 className="text-5xl font-semibold my-2">Produk</h1>
+        <h1 className="text-5xl font-semibold my-2 font-tapestry">Produk</h1>
         <p className="font-extralight mb-10">
           List Produk yang telah kami buat.
         </p>
@@ -26,7 +26,7 @@ const Produk = () => {
             </div>
             <div className="w-1/2 flex">
               <div className="m-auto p-1">
-                <h3 className="text-center text-2xl font-semibold my-2">
+                <h3 className="text-center text-2xl font-semibold my-2 font-raleway">
                   Gown
                 </h3>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -44,7 +44,7 @@ const Produk = () => {
             </div>
             <div className="w-1/2 flex">
               <div className="m-auto p-1">
-                <h3 className="text-center text-2xl font-semibold my-2">
+                <h3 className="text-center text-2xl font-semibold my-2 font-raleway">
                   Coverall
                 </h3>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -58,11 +58,11 @@ const Produk = () => {
           </div>
           <div className="flex rounded-xl p-2 shadow-lg">
             <div className="w-1/2 m-auto">
-              <Image src={ImageCard} />
+              <Image src={ImageCard} alt="Opthalmic Drape" />
             </div>
             <div className="w-1/2 flex">
               <div className="m-auto p-1">
-                <h3 className="text-center text-2xl font-semibold my-2">
+                <h3 className="text-center text-2xl font-semibold my-2 font-raleway">
                   Opthalmic Drape
                 </h3>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -76,30 +76,12 @@ const Produk = () => {
           </div>
           <div className="flex rounded-xl p-2 shadow-lg">
             <div className="w-1/2 m-auto">
-              <Image src={ImageCard} />
+              <Image src={ImageCard} alt="Universal Sets" />
             </div>
             <div className="w-1/2 flex">
               <div className="m-auto p-1">
-                <h3 className="text-center text-2xl font-semibold my-2">
+                <h3 className="text-center text-2xl font-semibold my-2 font-raleway">
                   Universal Sets
-                </h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <Link href="/produk/gown">
-                  <a className="btn btn-accent btn-sm rounded-lg my-2">
-                    Detail
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="flex rounded-xl p-2 shadow-lg">
-            <div className="w-1/2 m-auto">
-              <Image src={ImageCard} />
-            </div>
-            <div className="w-1/2 flex">
-              <div className="m-auto p-1">
-                <h3 className="text-center text-2xl font-semibold my-2">
-                  Gown
                 </h3>
                 <p>Lorem ipsum dolor sit amet.</p>
                 <Link href="/produk/gown">
